@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>banking</title>
 </head>
+
 <body>
-    <h1>welcome my banking pages</h1>
+    <header>
+        <header>
+            <h1 class="mt-16 text-center text-4xl font-semibold ui-monospace text-blue-600 py-4">welcome to my banking
+                <span class="text-orange-500"> pages !!!</span></h1>
+        </header>
+    </header>
+    <main class=" w-3/4 mx-auto">
+        <section>
+            <div class=" pt-5 pb-3  grid-items grid grid-cols-3 gap-0 rounded text-center">
+                <div class="item bg-emerald-500	w-3/4 text-center p-10">
+                    <h2 class="text-2xl font-semibold">deposite</h2>
+                    <h3 class="text-4xl font-normal">$00</h3>
+                </div>
+                <div class="item bg-yellow-400	w-3/4 rounded text-center p-10">
+                    <h2 class="text-2xl font-semibold">withdraw</h2>
+                    <h3 class="text-4xl font-normal">$00</h3>
+                </div>
+                <div class="item bg-red-500	w-3/4 rounded text-center p-10">
+                    <h2 class="text-2xl font-semibold">balance</h2>
+                    <h3 class="text-4xl font-normal">$1200</h3>
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto">
+            <div class="deposite grid grid-cols-2 gap-4">
+                <div class="form bg-stone-500 rounded w-50 px-5 py-5">
+                    <h2 class="text-2xl font-semibold">please deposite here</h2>
+                    <input id="depositeInput" class="block my-5 p-1 rounded border-2 border-slate-50 w-2/4" type="email"
+                        placeholder="$ you want to deposite">
+
+                    <button id="depositeBtn"
+                        class="my-1 bg-pink-600	 py-1 px-8 rounded text-2xl text-white">deposite</button>
+                </div>
+                <div class="form bg-fuchsia-500	rounded px-5 py-5">
+                    <h2 class="text-2xl font-semibold">please withdraw here</h2>
+                    <input id="withdrawInput" class="block my-5 p-1 rounded border-2 border-slate-50 w-2/4" type="email"
+                        placeholder="$ you want to withdraw">
+
+                    <button id="withdrwaBtn"
+                        class="my-1 bg-pink-600	 py-1 px-8 rounded text-2xl text-white">withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- js -->
+    <script src="js/banking.js"></script>
 </body>
+
 </html>
