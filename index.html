@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- tailwind link -->
+        <script src="https://cdn.tailwindcss.com"></script>
     <title>banking</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- tailwind link -->
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -21,12 +19,12 @@
         <section class="mx-auto w-2/4 bg-orange-400 rounded py-2">
             <h1 class="px-5 text-2xl pb-1">please login first</h1>
             <div class="form mx-auto px-5">
-                <input class="block my-5 p-1 rounded border-2 border-slate-50 w-2/4" type="email"
+                <input id="emailBox" class="block my-5 p-1 rounded border-2 border-slate-50 w-2/4" type="email"
                     placeholder="your Email">
-                <input class="p-1 block rounded border-2 border-slate-50 w-2/4" type="password"
+                <input id="passBox" class="p-1 block rounded border-2 border-slate-50 w-2/4" type="password"
                     placeholder="your password">
                 <br>
-                <button class="my-1 bg-pink-600	 py-1 px-8 rounded text-2xl text-white">submit</button>
+                <button id="submit" class="my-1 bg-pink-600	 py-1 px-8 rounded text-2xl text-white">submit</button>
             </div>
         </section>
     </main>
