@@ -17,7 +17,20 @@ document.getElementById("depositeBtn").addEventListener("click", function(){
 })
 
 //get withdrawButton
-document.getElementById("")
+document.getElementById("withdrwaBtn").addEventListener("click", function(){
+    const withdrawInputBox = document.getElementById("withdrawInput");
+    const withdrawInputValue = withdrawInputBox.value;
+    const withdrawInnerText = document.getElementById("withdrawDollar");
+    const withPreviousTotaInnerText = withdrawInnerText.innerText;
+    withdrawInputBox.value = " ";
+    const withdrawTotalInnerText =  parseFloat(withPreviousTotaInnerText) + parseFloat(withdrawInputValue);
+    withdrawInnerText.innerText = withdrawTotalInnerText;
+   //update balance
+   const balanceText = document.getElementById("balance");
+   const balanceTextValue = balanceText.innerText;
+   const balanceTextPreviousValue = parseFloat(balanceTextValue);
+   balanceText.innerText = balanceTextPreviousValue - withdrawTotalInnerText;
+})
 
 
 
