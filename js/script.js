@@ -1,12 +1,11 @@
 
-//submit event
+//get login 
 document.getElementById("submit").addEventListener("click", function(){
-    const emailInput = document.getElementById("emailBox");
-    const userEmail = emailInput.value;
-    const  passInput = document.getElementById("passBox");
-    const userPassword =     passInput.value;
-   if((userEmail == "safayethowlader96@gmail.com") && (userPassword =="s1a2f3a4")){
-      window.location.href = "banking.html";
-   }
+    const userEmail = document.getElementById("emailBox");
+    const userEmailValue = userEmail.value;
+    const userpassword = document.getElementById("passBox");
+    const userPasswordValue = userpassword.value;
+    if(( userEmailValue == "safayethowlader96@gmail.com") && ( userPasswordValue == "s1a2f3a4")){
+          window.location.href = "banking.html";
+    }
 })
-
